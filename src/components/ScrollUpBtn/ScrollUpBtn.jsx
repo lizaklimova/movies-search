@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { IoIosArrowUp } from 'react-icons/io';
-import { ScrollUpButton } from './ScrollUpBtn.styled';
+import { useEffect, useState } from "react";
+import { IoIosArrowUp } from "react-icons/io";
+import { ScrollUpButton } from "./ScrollUpBtn.styled";
 
 const ScrollUpBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,24 +16,24 @@ const ScrollUpBtn = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
     <ScrollUpButton
       onClick={scrollToTop}
-      style={{ display: isVisible ? 'block' : 'none' }}
+      style={{ display: isVisible ? "flex" : "none" }}
     >
       <IoIosArrowUp size={55} fill="#fff" />
     </ScrollUpButton>
