@@ -1,14 +1,14 @@
-import { IoSearchOutline } from 'react-icons/io5';
-import { Container } from 'components/App/App.styled';
+import { IoSearchOutline } from "react-icons/io5";
+import { Container } from "components/App/App.styled";
 import {
   SearchForm,
   SearchInputWrapper,
   SearchInput,
   SearchInputLabel,
   SearchBtn,
-} from './SearchMovies.styled';
+} from "./SearchMovies.styled";
 const SearchMovies = ({ search }) => {
-  const handleSearch = e => {
+  const handleSearch = (e) => {
     e.preventDefault();
 
     search(e.target.search.value);
@@ -27,7 +27,9 @@ const SearchMovies = ({ search }) => {
             required
             autoComplete="off"
           />
-          <SearchInputLabel htmlFor="input">Search movie</SearchInputLabel>
+          <SearchInputLabel htmlFor="search-input">
+            Search for movie
+          </SearchInputLabel>
         </SearchInputWrapper>
         <SearchBtn type="submit">
           <IoSearchOutline stroke="#fff" size={25} />
