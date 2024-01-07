@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const SearchForm = styled.form`
   display: flex;
@@ -48,7 +48,7 @@ export const SearchInputLabel = styled.label`
   left: 5%;
   background-color: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.grey};
-  width: 105px;
+  width: 65px;
   text-align: center;
   transition: ${({ theme }) => `all ${theme.transitions.linear}`};
   cursor: text;
